@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Papa Ji 🎉</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #00c6ff, #0072ff, #ff6a00, #ee0979);
+      background-size: 400% 400%;
+      animation: gradientShift 10s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: 'Poppins', sans-serif;
+      overflow: hidden;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .card {
+      border: 6px solid white;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+      overflow: hidden;
+      animation: popUp 1.2s ease;
+    }
+
+    @keyframes popUp {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    img {
+      width: 90vw;
+      max-width: 900px;
+      border-radius: 15px;
+      display: block;
+    }
+
+    .text {
+      text-align: center;
+      color: #fff;
+      font-size: 2rem;
+      margin-top: 15px;
+      text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="Happy Birthday Papa Ji.png" alt="Happy Birthday Papa Ji">
+  </div>
+  <div class="text">🎂 Happy Birthday, Papa Ji ❤️<br>– With love, Ayush</div>
+</body>
+</html>
